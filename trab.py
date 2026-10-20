@@ -159,7 +159,7 @@ desenhar(labirinto, c_dfs)
 print("--- VISUALIZAÇÃO GULOSA ---")
 desenhar(labirinto, c_gulosa)
 
-# Tabela Comparativa Automática
+# Tabela 
 print("\n" + "="*45)
 print(f"{'Algoritmo':<12} | {'Tamanho Caminho':<16} | {'Casas Visitadas':<15}")
 print("="*45)
