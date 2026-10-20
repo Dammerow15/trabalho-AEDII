@@ -1,13 +1,11 @@
-# Resolução de Labirinto com Grafos (AED II)
+# Labirinto - AED II
 
-Atividade desenvolvida para a disciplina de Algoritmos e Estruturas de Dados II (AED II) sob a orientação do Prof. Pablo De Chiaro.
+Atividade de AED II (Prof. Pablo De Chiaro).
 
-## Sobre o Projeto
-O objetivo deste projeto é representar um labirinto como um grafo e implementar três algoritmos clássicos de busca para encontrar um caminho da entrada (`I`) até a saída (`F`), comparando a eficiência e o comportamento de cada abordagem.
+## Sobre
+Transformação de um labirinto $10 \times 10$ em grafo para comparar os algoritmos **BFS**, **DFS** e **Busca Gulosa** (tamanho do caminho e casas visitadas).
 
-## Labirinto Desenvolvido
-O labirinto utilizado possui dimensões de $10 \times 10$, contendo corredores livres (`.`), paredes (`#`), múltiplos caminhos alternativos de tamanhos diferentes e becos sem saída propositais para testar a robustez das buscas:
-
+## Labirinto
 ```text
 I.#.......
 .#.#.#####
