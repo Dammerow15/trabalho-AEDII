@@ -1,6 +1,6 @@
 import heapq
 
-# O seu labirinto 10x10 com caminhos, bifurcações e becos sem saída
+# labirinto
 labirinto = [
     "I.#.......",
     ".#.#.#####",
@@ -56,7 +56,7 @@ def reconstruir(veio_de, inicio, saida):
     caminho.reverse()
     return caminho
 
-# 1. BFS (Busca em Largura)
+# 1. BFS 
 def bfs(grafo, inicio, saida):
     fila = [inicio]
     visitados = [inicio]
@@ -76,7 +76,7 @@ def bfs(grafo, inicio, saida):
                 
     return reconstruir(veio_de, inicio, saida), casas_visitadas
 
-# 2. DFS (Busca em Profundidade)
+# 2. DFS 
 def dfs(grafo, inicio, saida):
     pilha = [inicio]
     visitados = []
@@ -101,7 +101,7 @@ def dfs(grafo, inicio, saida):
                 
     return reconstruir(veio_de, inicio, saida), casas_visitadas
 
-# 3. Busca Gulosa (Greedy Best-First Search com Distância de Manhattan)
+#  Busca 
 def gulosa(grafo, inicio, saida):
     def heuristica(v):
         return abs(v[0] - saida[0]) + abs(v[1] - saida[1])
@@ -141,7 +141,7 @@ def desenhar(lab, caminho):
         print("".join(linha))
     print("-" * 20)
 
-# --- EXECUÇÃO E TABELA ---
+#  EXECUÇÃO
 inicio = achar(labirinto, 'I')
 saida = achar(labirinto, 'F')
 grafo = montar_grafo(labirinto)
